@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M.J. · mamjow</title>
+<meta name="description" content="M.J. (mamjow). Nothing fun. Spectating the fall down.">
+<meta property="og:title" content="M.J. · mamjow">
+<meta property="og:description" content="Nothing fun. Spectating the fall down.">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/25513700?v=4&s=400">
+<link rel="icon" href="https://avatars.githubusercontent.com/u/25513700?v=4&s=64">
+<style>
+  :root {
+    --bg: #f6f5f1; --fg: #1c1d1f; --muted: #6b6e73; --line: #d9d7cf;
+    --accent: #2f6f4e; --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #14171a; --fg: #e6e4de; --muted: #8b9096; --line: #2a2f34;
+            --accent: #7fd4a5; --card: #1a1e22; }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.6 ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 20px 64px; }
+  header { display: flex; gap: 20px; align-items: center; margin-bottom: 40px; }
+  header img {
+    width: 88px; height: 88px; border-radius: 50%;
+    border: 1px solid var(--line); flex: none;
+  }
+  h1 { margin: 0; font-size: 1.6rem; letter-spacing: -0.02em; line-height: 1.2; }
+  .handle { color: var(--muted); }
+  .tag { margin: 6px 0 0; }
+  .meta { margin-top: 8px; color: var(--muted); font-size: .85rem; }
+  h2 {
+    font-size: .8rem; text-transform: uppercase; letter-spacing: .12em;
+    color: var(--muted); font-weight: 500; margin: 48px 0 14px;
+    border-bottom: 1px solid var(--line); padding-bottom: 8px;
+  }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:hover { text-decoration-thickness: 2px; }
+  .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+  .repo {
+    display: block; background: var(--card); border: 1px solid var(--line);
+    border-radius: 6px; padding: 14px 16px; text-decoration: none; color: var(--fg);
+    transition: border-color .15s;
+  }
+  .repo:hover { border-color: var(--accent); }
+  .repo b { display: block; color: var(--accent); word-break: break-word; }
+  .repo p { margin: 4px 0 10px; font-size: .85rem; color: var(--muted); min-height: 1.3em; }
+  .repo .foot { display: flex; gap: 12px; font-size: .78rem; color: var(--muted); flex-wrap: wrap; }
+  .pill { border: 1px solid var(--line); border-radius: 999px; padding: 0 8px; }
+  .note { font-size: .85rem; color: var(--muted); margin-top: 14px; }
+  ul.links { list-style: none; padding: 0; margin: 0; }
+  ul.links li { margin: 4px 0; }
+  ul.links li::before { content: "→ "; color: var(--muted); }
+  footer { margin-top: 56px; color: var(--muted); font-size: .8rem; }
+  @media (max-width: 480px) {
+    header { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img src="https://avatars.githubusercontent.com/u/25513700?v=4&s=200" alt="mamjow avatar" width="88" height="88">
+    <div>
+      <h1>M.J. <span class="handle">/ mamjow</span></h1>
+      <p class="tag">👽 Nothing fun. Spectating the fall down.</p>
+      <div class="meta">Land of max 0 height</div>
+    </div>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>I write small programs: Advent of Code puzzles in C#, some Python scripts, and the occasional R experiment. Mostly exercises and tools, not products.</p>
+  </section>
+
+  <section>
+    <h2>Repositories</h2>
+    <div class="grid" id="repos">
+      <!-- Static fallback; replaced by live data from the GitHub API when it loads. -->
+      <a class="repo" href="https://github.com/mamjow/Helvoirt"><b>Helvoirt</b><p>&nbsp;</p><div class="foot"><span>Python</span></div></a>
+      <a class="repo" href="https://github.com/mamjow/ping_script"><b>ping_script</b><p>a pinging console</p><div class="foot"><span>Python</span></div></a>
+      <a class="repo" href="https://github.com/mamjow/adventofcode2025"><b>adventofcode2025</b><p>&nbsp;</p><div class="foot"><span>C#</span></div></a>
+      <a class="repo" href="https://github.com/mamjow/adventofcode2024"><b>adventofcode2024</b><p>&nbsp;</p><div class="foot"><span>C#</span></div></a>
+      <a class="repo" href="https://github.com/mamjow/adventofcode2022"><b>adventofcode2022</b><p>&nbsp;</p><div class="foot"><span>C#</span></div></a>
+    </div>
+    <p class="note" id="repo-note">Showing a static list. <a href="https://github.com/mamjow?tab=repositories">All repositories on GitHub</a>.</p>
+  </section>
+
+  <section>
+    <h2>Elsewhere</h2>
+    <ul class="links">
+      <li><a href="https://github.com/mamjow">github.com/mamjow</a></li>
+      <li><a href="https://github.com/mamjow?tab=stars">starred repositories</a></li>
+    </ul>
+  </section>
+
+  <footer>© <span id="y">2026</span> M.J. Hosted on GitHub Pages.</footer>
+</div>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+
+  // Live repo list. Own (non-fork) repos only, newest push first. Falls back to the static list on any failure.
+  (async function () {
+    const grid = document.getElementById('repos');
+    const note = document.getElementById('repo-note');
+    try {
+      const res = await fetch('https://api.github.com/users/mamjow/repos?per_page=100&sort=pushed');
+      if (!res.ok) throw new Error(res.status);
+      const all = await res.json();
+      const own = all
+        .filter(r => !r.fork && r.name.toLowerCase() !== 'mamjow.github.io' && r.name !== 'mamjow')
+        .sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at))
+        .slice(0, 12);
+      if (!own.length) throw new Error('empty');
+
+      const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+      grid.innerHTML = own.map(r => `
+        <a class="repo" href="${esc(r.html_url)}">
+          <b>${esc(r.name)}</b>
+          <p>${esc(r.description) || '&nbsp;'}</p>
+          <div class="foot">
+            ${r.language ? `<span>${esc(r.language)}</span>` : ''}
+            ${r.stargazers_count ? `<span>★ ${r.stargazers_count}</span>` : ''}
+            ${r.forks_count ? `<span>⑂ ${r.forks_count}</span>` : ''}
+          </div>
+        </a>`).join('');
+      note.innerHTML = `Live from GitHub, forks hidden. <a href="https://github.com/mamjow?tab=repositories">All repositories</a>.`;
+    } catch (e) {
+      /* keep static fallback (also covers API rate limiting) */
+    }
+  })();
+</script>
+</body>
+</html>
