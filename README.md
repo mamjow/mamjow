@@ -4,6 +4,9 @@ Nothing fun. Spectating the fall down.
 
 📍 Land of max 0 height
 
+I'm in love with code. Most of what I build lives in private repositories, so what's public here is only a fraction.
+Outside of code I'm drawn to philosophy and psychology. I like to think. I am a thinker.
+
 ## What's here
 
 - **Advent of Code** in C#: [2022](https://github.com/mamjow/adventofcode2022) · [2024](https://github.com/mamjow/adventofcode2024) · [2025](https://github.com/mamjow/adventofcode2025)
@@ -12,4 +15,4 @@ Nothing fun. Spectating the fall down.
 
 ## Site
 
-[mamjow.github.io](https://mamjow.github.io)
+[mamjow.github.io](https://mamjow.github.io/mamjow)
